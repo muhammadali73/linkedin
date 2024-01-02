@@ -1,0 +1,554 @@
+linkedin.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0b303d7ec.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 1.05rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+
+            background-color: #f4f2ee;
+        }
+        .logo{
+            background-color: #0a66c2;
+            padding: 8px 5px;
+            border-radius: 3px;
+            height: 20px;
+            width: 22px;
+            color: #ffffff;
+            font-size: 25px;
+            position: relative;
+            top: 9px;
+            left: 117px;   
+        }
+        .navbar{
+            background-color: white;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            position: fixed;
+        }
+        .searchbar1,.searchbar2{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #edf3f8;
+            height: 35px;
+            border: none;
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: lighter;
+            font-weight: 400;
+            padding: 0px 0.8rem 0 28px;
+            width: 200px;
+            position: relative;
+            left: 125px;
+            top: 9px;
+            border-radius: 3px;
+        }
+        .glass{
+            position: relative;
+            left: -70px;
+            top: 18px;
+        }
+        .city{
+            position: relative;
+            left: -70px;
+            top: 18px;
+            color: black;
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            position: relative;
+            left: 26%;
+            display: flex;
+            top: 8px;
+        }
+        .nav:hover{
+            color: black;
+        }
+        li,i{
+            color: #767676;
+        }
+        .fa-solid{
+            position: relative;
+            right: 219px;
+            font-size: larger;
+            cursor:pointer
+        }
+        .fa-solid1:hover,.fa-bag:hover,.fa-message:hover,.fa-bell:hover,.fa-business:hover{
+            color: black;
+            border-bottom: 2px solid black;
+            margin: 0;
+        }
+        .fa-bag{
+            position: relative;
+            right: 256px;
+            font-size: larger;
+            cursor:pointer
+        }
+        .fa-message{
+            position: relative;
+            right: 240px;
+            font-size: larger;
+            cursor:pointer
+        }      
+        .fa-bell{
+            position: relative;
+            right: 252px;
+            font-size: larger;
+            cursor:pointer
+        }  
+        .fa-business{
+            position: relative;
+            right: 296px;
+            font-size: larger;
+            cursor:pointer
+        }
+        .link1:hover,.link2:hover,.link3:hover,.link4:hover,.link5:hover,.link6:hover,.link7:hover{
+            color: black;
+        }
+        .link1{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -257px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link2{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -275px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link3{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -287px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link4{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -285px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link5{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -305px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link6{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -350px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link7{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            position: relative;
+            left: -327px;
+            top: 12px;
+            font-size: small;
+            cursor:pointer
+        }
+        .link7::after{
+            content: ' ▼';
+        }
+        .pro-img{
+            position: relative;
+            right: 290px;
+            bottom: 4px;
+        }
+        .line{
+            height: 48px;
+            width: 1px;
+            background-color: #c5c4c4;
+            position: relative;
+            right: 323px;
+            bottom: 7px;
+
+        }
+        .searchbar{
+           position: relative;
+           left: 20%;
+           height: 40px;
+           width: 200px;
+           top: 7px;
+           border-radius: 20px;
+           padding-left: 10px;
+           font-size: 1.01rem;
+           border: 1px solid gray;
+        }
+        .searchbar:focus{
+            box-shadow: 1px 5px 10px #0a66c2;
+        }
+        .plan{
+            color: #b8806e;
+            font-size: small;
+            position: relative;
+            top: 15px;
+            left: 19px;
+        }
+        .message-box{
+            position: fixed;
+            display: flex;
+            bottom: 0%;
+            right: 2%;
+            width: 300px;
+            height: 50px;
+            background-color: black;
+        }
+        .box-img{
+            margin: 0 10px;
+            border-radius: 15px;
+            position: relative;
+            top: 17px;
+        }
+        .fafa{
+            position: relative;
+            left: 60px;
+            top: 17px;
+            margin: 0 10px;
+        }
+        .box-para{
+            color: gray;
+            position: relative;
+            top: 17px;
+        }
+        .hero{
+            display: flex;
+        }
+        .left{
+            position: fixed;
+            height: 420px;
+            width: 200px;
+            top: 73px;
+            right: 1047px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .center{
+            position: relative;
+            height: 600px;
+            width: 600px;
+            top: 73px;
+            left: 355px;
+            background-color: #ffffff;
+            border-radius: 20px 20px 0 0;
+
+        }
+        .right{
+            position: relative;
+            height: 315px;
+            width: 260px;
+            top: 73px;
+            left: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+
+        }
+        .left-image-cover{
+            height: 100px;
+            width: 200px;
+            border-radius: 20px 20px 0 0;
+        }
+        .left-image-pro{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            position: relative;
+            top: -50px;
+            left: 50px;
+
+        }
+        .left-head{
+            position: relative;
+            left: 38px;
+            top: -52px;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .left-prof{
+            color: grey;
+            font-family: sans-serif;
+            font-weight: lighter;
+            font-size: 13px;
+            position: relative;
+            top: -43px;
+            left: 36px;
+        }
+        .left-detail{
+            color: grey;
+            position: relative;
+            left: 10px;
+            font-size: 13px;
+            font-family: sans-serif;
+            padding: 4px 0;
+        }
+        .left-detail1{
+            color: grey;
+            position: relative;
+            left: 10px;
+            font-size: 11px;
+            font-family: sans-serif;
+            padding: 4px 0;
+        }
+        span{
+            color: #0a66c2;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+        .yellow{
+            height: 10px;
+            width: 10px;
+            background-color: #e7a33e;
+            position: relative;
+            top: 11px;
+            left: 4px;
+        }
+        .left-upgrade{
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            position: relative;
+            left: 17px;
+        }
+        .fa-trello{
+            position: relative;
+            top: -4px;
+            left: 4px;
+        }
+        .left-items{
+            position: relative;
+            top: -20px;
+            left: 25px;
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .center-image{
+            height: 65px;
+            width: 65px;
+            border-radius: 32.5px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .center-search{
+            height: 60px;
+            width: 490px;
+            position: relative;
+            left: 30px;
+            top: -5px;
+            border-radius: 30px;
+            padding: 0 10px;
+            border: 1px solid grey;
+        }
+        .google{
+            height: 300px;
+            width: 550px;
+            border-radius: 20px;
+            position: relative;
+            left: 24px;
+            top: -12px;
+        }
+        .post-pro{
+            position: relative;
+            top: 10px;
+            left: 10px;
+            height: 35px;
+            width: 35px;
+            border-radius: 17.5px;
+        }
+        .post-name{
+            position: relative;
+            top: -20px;
+            left: 50px;
+        }
+        .post-time{
+            position: relative;
+            top: -20px;
+            left: 50px;
+            color: gray;
+            font-size: 12px;
+        }
+        .fa-earth-americas{
+            position: relative;
+            top: -322px;
+            left: 74px;
+            font-size: 12px
+        }
+        .post-caption{
+            font-size: 15px;
+            font-family: sans-serif;
+            position: relative;
+            top: -30px;
+            left: 40px;
+        }
+        .logo1{
+            background-color: #0a66c2;
+            padding: 8px 5px;
+            border-radius: 3px;
+            height: 55px;
+            width: 55px;
+            color: #ffffff;
+            font-size: 58px;
+            position: relative;
+            top: 51px;
+            left: 13px;
+            margin-top: -52px;
+        }
+        .logo2{
+            background-color: #0a66c2;
+            padding: 8px 5px;
+            border-radius: 3px;
+            height: 55px;
+            width: 55px;
+            color: #ffffff;
+            font-size: 58px;
+            position: relative;
+            top: 72px;
+            left: 13px;
+            margin-top: -52px;
+        }
+        .para{
+            position: relative;
+            top: -22px;
+            left: 80px;
+        }
+        .para1{
+            position: relative;
+            top: -1px;
+            left: 80px;
+        }
+        .para2{
+            position: relative;
+            top: -1px;
+            left: 80px;
+        }
+        .logo3{
+            background-color: #0a66c2;
+            padding: 8px 5px;
+            border-radius: 3px;
+            height: 55px;
+            width: 55px;
+            color: #ffffff;
+            font-size: 58px;
+            position: relative;
+            top: 72px;
+            left: 13px;
+            margin-top: -52px;
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <i class="fa-brands fa-linkedin-in logo"></i>
+        <input type="search" class="searchbar1" placeholder="Title, skill or company" required>
+        <p class="fa-solid fa-magnifying-glass glass"></p>
+        <input type="search" class="searchbar2" placeholder="City, state or zip code" required>
+        <i class="fa-solid fa-location-dot city"></i>
+        <ul class="nav">
+            <i class="fa-solid fa-house fa-solid1"></i>
+            <li class="link1">Home</li>
+            <i class="fa-solid fa-network-wired fa-network fa-solid1"></i>
+            <li class="link2">My Network</li>
+            <i class="fa-solid fa-briefcase fa-bag"></i>
+            <li class="link3">Jobs</li>
+            <i class="fa-solid fa-comment-dots fa-message"></i>
+            <li class="link4">Messaging</li>
+            <i class="fa-solid fa-bell fa-bell"></i>
+            <li class="link5">Notifications</li>
+            <img class="pro-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI3iX7tf1HiAnbVKSpyns2b0moiUKSJE2uQ&usqp=CAU" alt="me" height="27px" width="30px">
+            <li class="link7">Me</li>
+            <div class="line"></div>
+            <i class="fa-solid fa-braille fa-business"></i>
+            <li class="link6">For Business</li>
+        </ul>
+        <a class="plan" href="#">Upgrade my plan</a>
+    </div>
+    <div class="message-box">
+        <img class="box-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI3iX7tf1HiAnbVKSpyns2b0moiUKSJE2uQ&usqp=CAU" alt="Error" height="27px" width="30px">
+        <p class="box-para" >Messaging</p>
+        <i class="fa-solid fa-ellipsis fafa"></i>
+        <i class="fa-solid fa-pen-to-square fafa"></i>
+        <i class="fa-solid fa-chevron-up fafa"></i>
+    </div>
+    <div class="hero">
+    <div class="left">
+        <img class="left-image-cover" src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZWJvb2slMjBjb3ZlcnxlbnwwfHwwfHx8MA%3D%3D" alt="profile">
+        <img class="left-image-pro" src="https://cdn-icons-png.flaticon.com/512/2919/2919906.png" alt="profile">
+        <h3 class="left-head" >Muhammad Ali</h3>
+        <p class="left-prof" >Murn Stack Developer</p>
+        <p class="left-detail" >Profile views &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>32</span></p>
+        <p  class="left-detail" >Post Impressions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 72</span></p>
+        <br>
+        <hr>
+        <br>
+        <p class="left-detail1">Find Customers With Sales Nav</p>
+        <div class="yellow"></div>
+        <p class="left-upgrade">Upgrade My Plan</p>
+        <br>
+        <i class="fa-brands fa-trello"></i>
+        <p class="left-items">My Items</p>
+    </div>
+    <div class="center">
+        <img class="center-image" src="https://cdn-icons-png.flaticon.com/512/2919/2919906.png" alt="profile">
+        <input class="center-search" type="search" placeholder="Start a post">
+        <br>
+        <br>
+        <img class="post-pro" src="https://cdn-icons-png.flaticon.com/512/2919/2919906.png" alt="error">
+        <h4 class="post-name" >Muhammad Ali</h4>
+        <p class="post-time" >22h.</p>
+        <i class="fa-solid fa-earth-americas"></i>
+        <p class="post-caption" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat cupiditate <br> explicabo ab amet illum temporibus ipsam sunt dolores dolorem quas.</p>
+        <img class="google" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="error">
+    </div>
+    <div class="right">
+        <i class="fa-brands fa-linkedin-in logo1"></i>
+        <p class="para">Lorem ipsum dolor sit <br> amet consectetur,<br> adipisicing elit. Quis, ab.</p><hr>
+        <i class="fa-brands fa-linkedin-in logo2"></i>
+        <p class="para1">Lorem ipsum dolor sit <br>amet consectetur,<br> adipisicing elit. Doloribus <br>, et.</p><hr>
+        <i class="fa-brands fa-linkedin-in logo3"></i>
+        <p class="para2">Lorem ipsum dolor sit <br> amet consectetur,<br> adipisicing elit. <br> Minima, labore.</p>
+    </div>
+</div>
+</body>
+</html>
